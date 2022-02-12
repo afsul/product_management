@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="text-align: center;">Gallery</h1>
+<div class="container-fluid">
+    <div class="row">
+        {% for item in ls %}
+        <div class="col-md-4">
+            <img src="{{item.img}}" width="500" height="300">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
